@@ -1,7 +1,7 @@
-package com.kuntsev.controller;
+package com.bekov.controller;
 
-import com.kuntsev.model.User;
-import com.kuntsev.service.UserService;
+import com.bekov.model.User;
+import com.bekov.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,8 +1,8 @@
-package com.kuntsev.service.impl;
+package com.bekov.service.impl;
 
-import com.kuntsev.model.Comment;
-import com.kuntsev.repository.CommentRepository;
-import com.kuntsev.service.CommentService;
+import com.bekov.model.Comment;
+import com.bekov.repository.CommentRepository;
+import com.bekov.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

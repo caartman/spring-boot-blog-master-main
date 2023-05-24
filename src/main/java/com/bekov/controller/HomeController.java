@@ -1,8 +1,8 @@
-package com.kuntsev.controller;
+package com.bekov.controller;
 
-import com.kuntsev.model.Post;
-import com.kuntsev.service.PostService;
-import com.kuntsev.util.Pager;
+import com.bekov.model.Post;
+import com.bekov.service.PostService;
+import com.bekov.util.Pager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;

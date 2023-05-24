@@ -1,6 +1,6 @@
-package com.kuntsev.service;
+package com.bekov.service;
 
-import com.kuntsev.model.User;
+import com.bekov.model.User;
 
 import java.util.Optional;
 

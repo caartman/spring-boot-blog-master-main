@@ -1,4 +1,4 @@
-package com.kuntsev;
+package com.bekov;
 import org.openqa.selenium.*;
 import org.openqa.selenium.TakesScreenshot;
 import java.io.File;

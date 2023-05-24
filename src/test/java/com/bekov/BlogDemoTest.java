@@ -1,6 +1,5 @@
-package com.kuntsev;
+package com.bekov;
 import org.junit.*;
-import static org.junit.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -12,7 +11,7 @@ public class BlogDemoTest {
     JavascriptExecutor js;
     @Before
     public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\kuntsev\\Documents\\univer\\2022\\TA\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\bekov\\Documents\\univer\\2022\\TA\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
         //driver.manage().timeouts().implicitlyWait(60);

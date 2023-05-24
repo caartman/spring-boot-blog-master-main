@@ -1,7 +1,7 @@
-package com.kuntsev.repository;
+package com.bekov.repository;
 
-import com.kuntsev.model.Post;
-import com.kuntsev.model.User;
+import com.bekov.model.Post;
+import com.bekov.model.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

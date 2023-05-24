@@ -1,4 +1,4 @@
-package com.kuntsev.controller;
+package com.bekov.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

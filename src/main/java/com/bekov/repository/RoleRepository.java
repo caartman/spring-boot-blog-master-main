@@ -1,6 +1,6 @@
-package com.kuntsev.repository;
+package com.bekov.repository;
 
-import com.kuntsev.model.Role;
+import com.bekov.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 

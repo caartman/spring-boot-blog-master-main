@@ -1,9 +1,8 @@
-package com.kuntsev;
+package com.bekov;
 import org.junit.*;
 
 import static java.time.Duration.ofSeconds;
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 public class BlogDemoTestPageObject {
@@ -14,7 +13,7 @@ public class BlogDemoTestPageObject {
     JavascriptExecutor js;
     @Before
     public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\kuntsev\\Documents\\univer\\2022\\TA\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\bekov\\Documents\\univer\\2022\\TA\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver();
         js = (JavascriptExecutor) driver;
         baseUrl = "https://www.google.com/";

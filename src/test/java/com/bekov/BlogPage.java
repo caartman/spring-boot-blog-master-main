@@ -1,4 +1,4 @@
-package com.kuntsev;
+package com.bekov;
 import org.openqa.selenium.*;
 public class BlogPage {
     private WebDriver driver;

@@ -1,4 +1,4 @@
-package com.kuntsev.model;
+package com.bekov.model;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.validator.constraints.Length;

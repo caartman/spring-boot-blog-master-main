@@ -1,6 +1,6 @@
-package com.kuntsev.service;
+package com.bekov.service;
 
-import com.kuntsev.model.Comment;
+import com.bekov.model.Comment;
 
 public interface CommentService {
 

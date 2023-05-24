@@ -1,7 +1,7 @@
-package com.kuntsev.service;
+package com.bekov.service;
 
-import com.kuntsev.model.Post;
-import com.kuntsev.model.User;
+import com.bekov.model.Post;
+import com.bekov.model.User;
 import org.springframework.data.domain.Page;
 
 import java.util.Optional;

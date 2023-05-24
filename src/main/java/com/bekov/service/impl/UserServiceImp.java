@@ -1,9 +1,9 @@
-package com.kuntsev.service.impl;
+package com.bekov.service.impl;
 
-import com.kuntsev.model.User;
-import com.kuntsev.repository.RoleRepository;
-import com.kuntsev.repository.UserRepository;
-import com.kuntsev.service.UserService;
+import com.bekov.model.User;
+import com.bekov.repository.RoleRepository;
+import com.bekov.repository.UserRepository;
+import com.bekov.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

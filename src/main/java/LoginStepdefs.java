@@ -15,7 +15,7 @@ public class LoginStepdefs {
     JavascriptExecutor js;
     @Given("I'm on {} page")
     public void iMOnPage(String arg0) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\kuntsev\\Documents\\univer\\2022\\TA\\chromedriver_win32 (1)\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\bekov\\Documents\\univer\\2022\\TA\\chromedriver_win32 (1)\\chromedriver.exe");
         driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
         //driver.manage().timeouts().implicitlyWait(60);

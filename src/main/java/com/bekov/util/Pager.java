@@ -1,10 +1,10 @@
-package com.kuntsev.util;
+package com.bekov.util;
 
-import com.kuntsev.model.Post;
+import com.bekov.model.Post;
 import org.springframework.data.domain.Page;
 
 /**
- * @author kuntsev
+ * @author bekov
  */
 public class Pager {
 

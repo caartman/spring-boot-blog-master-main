@@ -1,9 +1,9 @@
-package com.kuntsev.service.impl;
+package com.bekov.service.impl;
 
-import com.kuntsev.model.Post;
-import com.kuntsev.model.User;
-import com.kuntsev.repository.PostRepository;
-import com.kuntsev.service.PostService;
+import com.bekov.model.Post;
+import com.bekov.model.User;
+import com.bekov.repository.PostRepository;
+import com.bekov.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
