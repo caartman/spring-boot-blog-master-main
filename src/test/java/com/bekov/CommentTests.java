@@ -9,7 +9,6 @@ import com.bekov.service.UserService;
 import org.junit.Assert;
 
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -80,11 +79,14 @@ public class CommentTests {
         Comment comment = new Comment();
 
         // Act & Assert
-        Assertions.assertThrows(javax.validation.ConstraintViolationException.class, () -> {
+        try {
             comment.setBody("");
             commentService.save(comment);
-        });
+            Assert.fail("Expected javax.validation.ConstraintViolationException was not thrown.");
+        } catch (javax.validation.ConstraintViolationException ex) {
+            // Exception was expected
+        }
+        }
     }
 
 
-}
