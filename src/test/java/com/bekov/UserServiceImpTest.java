@@ -37,7 +37,7 @@ public class UserServiceImpTest {
 
     @Test
     public void testFindByUsername() {
-        String username = "john.doe";
+        String username = "user";
         User user = new User();
         when(mockUserRepository.findByUsername(username)).thenReturn(Optional.of(user));
 
@@ -64,18 +64,23 @@ public class UserServiceImpTest {
     @Test
     public void testSave() {
         User user = new User();
-        String encodedPassword = "encodedPassword";
+        user.setPassword("plaintextPassword"); // Set a non-null password
+
+        String encodedPassword = "password";
         when(mockPasswordEncoder.encode(user.getPassword())).thenReturn(encodedPassword);
-        when(mockRoleRepository.findByRole("ROLE_USER")).thenReturn(new Role());
+        when(mockRoleRepository.findByRole("ROLE_USER")).thenReturn(mock(Role.class));
         when(mockUserRepository.saveAndFlush(user)).thenReturn(user);
 
         User result = userServiceImp.save(user);
 
         assertEquals(encodedPassword, result.getPassword());
         assertEquals(1, result.getActive());
-        assertEquals(Collections.singletonList(new Role()), result.getRoles());
+        assertEquals(Collections.singletonList(mock(Role.class)), result.getRoles());
         verify(mockPasswordEncoder).encode(user.getPassword());
         verify(mockRoleRepository).findByRole("ROLE_USER");
         verify(mockUserRepository).saveAndFlush(user);
     }
+
+
+
 }
